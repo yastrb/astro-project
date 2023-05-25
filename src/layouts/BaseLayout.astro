@@ -3,7 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const { pageTitle } = Astro.props;
 ---
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -12,7 +12,7 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
 </head>
 
-<body class="bg-[#2A233D] text-gray-500">
+<body class="bg-[#2A233D] dark:bg-slate-700 text-gray-500 dark:text-gray-300">
     <Header />
     <h1>{pageTitle}</h1>
     <slot />
